@@ -46,7 +46,9 @@ Try it now 👇
 
 			<div class="telegram-content">
 				
-
+<div class="date">
+	January 26
+</div>
 				<div class="telegram-content__item telegram-content__item--profile">
 					<div class="profile">
 					<img src="img/2.png" alt="" class="photo">
@@ -79,9 +81,7 @@ Try it now 👇
 		<img src="img/98520.svg" alt="">
 		<img src="img/img.svg" alt="" class="add-img">
 	</div>
-	
-	
-</div>
+	</div>
 
 			<div class="buttons-wrapper">
 				<div class="button dislike-button">
@@ -101,12 +101,12 @@ Try it now 👇
 	<script src="js/main.js"></script>
 	<script>
 		$('.dislike-button').click(function(){
-$( ".telegram-content" ).append( "<div class='dislike'>❌</div>" );
+$( ".telegram-content" ).append( "<div class='dislike'>❌</div><div class='like-time'>11.03<img src='img/duble-tick-white.png'></div>" );
 	$( ".telegram-content" ).append("<div class='telegram-content__item telegram-content__item--profile'><div class='profile'><img src='img/2.png' class='photo'><div class='profile-footer'><div class='user-name'>Vitaliy, 22</div><div class='profile-time'>11.05</div></div></div></div>");				
 			
 		})
 		$('.like-button').click(function(){
-			$( ".telegram-content" ).append( "<div class='dislike'>💚</div>" );
+			$( ".telegram-content" ).append( "<div class='dislike'>💚</div><div class='like-time'>11.03<img src='img/duble-tick-white.png'></div>" );
 $( ".telegram-content" ).append("<div class='telegram-content__item telegram-content__item--profile'><div class='profile'><img src='img/2.png' class='photo'><div class='profile-footer'><div class='user-name'>Vitaliy, 22</div><div class='profile-time'>11.05</div></div></div></div>");
 		
 		})
