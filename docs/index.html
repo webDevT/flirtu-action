@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Flirtu</title>
+<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body >
+
+<div class="flirtu-action">
+	<div class="fliru-action__container">
+		<div class="flirtu-action__title">
+			Dating in Telegram <br>
+👇
+Try it now 👇
+		</div>
+
+		<div class="flirtu-simulation">
+		
+			<div class="flirtu-simulation-container">
+				
+				<div class="telegram-header">
+				<div class="telegram-header__left">
+					<img src="img/back.svg" alt="" class="back-arrow">
+					<img src="img/f.jpg" alt="" class="flirtu-logo">
+					<div class="telegram-header__text">
+						<div class="telegram-header__title">
+							Flirtu
+						</div>
+						<div class="telegram-header__sub-title">
+							bot
+						</div>
+					</div>
+				</div>
+				<div class="telegram-header__right">
+					<div class="telegram-header__dot"></div>
+					<div class="telegram-header__dot"></div>
+					<div class="telegram-header__dot"></div>
+				</div>
+				
+			</div>
+
+			<div class="telegram-content">
+				
+
+				<div class="telegram-content__item telegram-content__item--profile">
+					<div class="profile">
+					<img src="img/2.png" alt="" class="photo">
+
+					<div class="profile-footer">
+						<div class="user-name">
+						Vitaliy, 22
+					</div>
+					<div class="profile-time">
+						11.05
+					</div>
+					</div>
+					
+				</div>
+				</div>
+
+	
+
+				
+
+			</div>
+
+<div class="content-footer">
+	<div>
+		<img src="img/smiley-svgrepo-com.svg" alt="">
+	<input type="text" placeholder="Message" readonly>
+	</div>
+
+	<div>
+		<img src="img/98520.svg" alt="">
+		<img src="img/img.svg" alt="" class="add-img">
+	</div>
+	
+	
+</div>
+
+			<div class="buttons-wrapper">
+				<div class="button dislike-button">
+					❌
+				</div>
+				<div class="button like-button">
+					💚
+				</div>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('.dislike-button').click(function(){
+$( ".telegram-content" ).append( "<div class='dislike'>❌</div>" );
+	$( ".telegram-content" ).append("<div class='telegram-content__item telegram-content__item--profile'><div class='profile'><img src='img/2.png' class='photo'><div class='profile-footer'><div class='user-name'>Vitaliy, 22</div><div class='profile-time'>11.05</div></div></div></div>");				
+			
+		})
+		$('.like-button').click(function(){
+			$( ".telegram-content" ).append( "<div class='dislike'>💚</div>" );
+$( ".telegram-content" ).append("<div class='telegram-content__item telegram-content__item--profile'><div class='profile'><img src='img/2.png' class='photo'><div class='profile-footer'><div class='user-name'>Vitaliy, 22</div><div class='profile-time'>11.05</div></div></div></div>");
+		
+		})
+
+	
+	</script>
+</body>
+</html>
