@@ -25,8 +25,10 @@ Try it now 👇
 				
 				<div class="telegram-header">
 				<div class="telegram-header__left">
-					<img src="img/back.svg" alt="" class="back-arrow">
-					<img src="img/f.jpg" alt="" class="flirtu-logo">
+					<div class="back-arrow"></div>
+					<div class="flirtu-logo">
+						
+					</div>
 					<div class="telegram-header__text">
 						<div class="telegram-header__title">
 							Flirtu
@@ -59,10 +61,12 @@ Try it now 👇
 						Vitaliy, 22
 					</div>
 					<div class='activity'>
-						<img src='img/timer-483.svg' alt="">Activity: 1 hour ago
+						<div class='activity-img img'></div>		
+						Activity: 1 hour ago
 					</div>
 					<div class='got-it'>
-						<img src='img/gift.png'>
+						<div class='img got-it-img'></div>
+						
 						Got it: 4 gift
 					</div>
 						</div>
@@ -112,7 +116,7 @@ Try it now 👇
 		Ready to chat with new people?
 	</p>
 
-	<p>#1 Dating in Telegram</p>
+	<p class="bold bold--s">#1 Dating in Telegram</p>
 
 	<p class="list">
 
@@ -168,20 +172,6 @@ Cookies Settings
 		
 		</div>
 	</div>
-
-		
-
-
-
-		
-
-
-
-		
-		
-
-		
-
 		<div class="copy">
 			© 2021 Flirtu, SIA. All rights reserved.
 
@@ -195,12 +185,12 @@ Cookies Settings
 	<script>
 		$('.dislike-button').click(function(){
 $( ".telegram-content" ).append( "<div class='dislike'>❌</div><div class='like-time'>11:03<img src='img/duble-tick-white.png'></div>" );
-	$( ".telegram-content" ).append("<div class='telegram-content__item telegram-content__item--profile'><div class='profile'><img src='img/2.png' class='photo'><div class='profile-footer'><div><div class='user-name'>Vitaliy, 22</div><div class='activity'><img src='img/timer-483.svg'>Activity: 1 hour ago</div><div class='got-it'><img src='img/gift.png'>Got it: 4 gift</div></div><div class='profile-time'>11:05</div></div></div></div>");				
+	$( ".telegram-content" ).append("<div class='telegram-content__item telegram-content__item--profile'><div class='profile'><img src='img/2.png' class='photo'><div class='profile-footer'><div><div class='user-name'>Vitaliy, 22</div><div class='activity'><div class='activity-img img'></div>Activity: 1 hour ago</div><div class='got-it'><div class='img got-it-img'></div>Got it: 4 gift</div></div><div class='profile-time'>11:05</div></div></div></div>");				
 			
 		})
 		$('.like-button').click(function(){
 			$( ".telegram-content" ).append( "<div class='dislike'>💚</div><div class='like-time'>11:03<img src='img/duble-tick-white.png'></div>" );
-$( ".telegram-content" ).append("<div class='telegram-content__item telegram-content__item--profile'><div class='profile'><img src='img/2.png' class='photo'><div class='profile-footer'><div><div class='user-name'>Vitaliy, 22</div><div class='activity'><img src='img/timer-483.svg'>Activity: 1 hour ago</div><div class='got-it'><img src='img/gift.png'>Got it: 4 gift</div></div><div class='profile-time'>11:05</div></div></div></div>");
+$( ".telegram-content" ).append("<div class='telegram-content__item telegram-content__item--profile'><div class='profile'><img src='img/2.png' class='photo'><div class='profile-footer'><div><div class='user-name'>Vitaliy, 22</div><div class='activity'><div class='activity-img img'></div>Activity: 1 hour ago</div><div class='got-it'><div class='img got-it-img'></div>Got it: 4 gift</div></div><div class='profile-time'>11:05</div></div></div></div>");
 		
 		})
 

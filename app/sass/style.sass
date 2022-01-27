@@ -56,11 +56,19 @@ body
 	justify-content: space-between
 .flirtu-logo 
 	width: 4vh
+	height: 4vh
+	background: url('../img/f.jpg')
+	background-size: 100%
+	background-position: center
 	border-radius: 50%
 .back-arrow 
 	width: 3vh
+	height: 3vh
 	display: block
 	margin-right: 1.5vh
+	background: url('../img/back.svg')
+	background-size: 100%
+	background-position: center
 .telegram-header__left
 	display: flex
 	align-items: center
@@ -93,7 +101,7 @@ body
 	justify-content: space-between
 	align-items: center
 .button 
-	background: #e3e7ea
+	background: #aab6bf
 	width: 49%
 	padding: 1.5vh 0  
 	display: flex
@@ -129,12 +137,21 @@ body
 .activity,
 .got-it
 	display: flex
-	img 
-		width: 2vh
+	.img 
+		width: 2.5vh
 		margin-right: 0.5vh 
 		display: block
-		height: 2vh
-
+		height: 2.5vh
+.activity-img
+	background: url('../img/timer-483.svg')
+	background-size: 100% 
+	background-position: center
+	background-repeat: no-repeat 
+.got-it-img
+	background: url('../img/gift.png')
+	background-size: 100% 
+	background-position: center
+	background-repeat: no-repeat 
 .telegram-content__item
 	margin-top: 1vh
 .dislike,
@@ -144,6 +161,21 @@ body
 	//display: none
 	margin-bottom: 2vh
 	margin-top: 2vh
+	animation: scale-anim3
+	animation-duration: 1s	
+	animation-delay: 0.2s	
+	transform: scale(1)
+@keyframes scale-anim3
+  0%
+    transform: scale(1) rotate(0)
+  20%
+   	transform: scale(1.2) rotate(25deg)
+  40%
+  	transform: scale(1) rotate(0)
+  60% 
+    transform: scale(1.2) rotate(-25deg)
+  100%
+  	transform: scale(1) rotate(0)
 .telegram-content__item--profile
 	//display: none
 
@@ -286,7 +318,8 @@ body
 	font-weight: 700
 	text-align: center
 	font-size: 3vh
-
+.bold--s 
+	font-size: 2.5vh
 //start footer style
 .footer 
 	padding-bottom: 3vh
