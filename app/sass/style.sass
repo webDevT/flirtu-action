@@ -11,7 +11,6 @@ body
 	width: 600px 
 	max-width: 100%
 	margin: 0 auto 
-	height: 100vh
 	overflow: hidden
 	box-sizing: border-box
 	//box-shadow: 0 0 7px 1px rgba(0, 0, 0, .1)
@@ -25,7 +24,6 @@ body
 	flex-direction: column
 	justify-content: flex-start
 	align-items: center
-	height: 100vh
 //end flirtu action style
 
 //stat flirtu simulation style
@@ -275,12 +273,150 @@ body
 	align-items: center
 	padding: 0.3vh 1.5vh
 	border-radius: 1vh
+.text-wrapper 
+	margin: 0 auto	
+	font-size: 2.5vh
+	width: 600px
+	max-width: 90%
+	margin-top: 5vh
+	a 
+		color: #000
+		font-weight: 700
+.bold 
+	font-weight: 700
 
-/* Medium Devices, Desktops */
+//start footer style
+.footer 
+	padding-bottom: 3vh
+	margin: 0 auto	
+	width: 600px
+	max-width: 90%
+	margin-top: 10vh
+	font-size: 2vh
+	a 
+		text-decoration: none 
+		color: #000
+		display: block 
+		margin-bottom: 2vh
+		padding: 1vh 0.4vh
+.copy
+	text-align: center
+	margin-top: 5vh
+.footer-col 
+	width: 100%
+	display: flex 
+	justify-content: center
+	flex-wrap: wrap
+
+
+//end footer style
+
+.button-animation 
+  position: relative
+  text-decoration: none
+  color: #fff
+  overflow: hidden
+  &:before 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 1.5vh
+    height: 100%
+    background-color: rgba(#fff, 0.6)
+    transform: translateX(-4em) skewX(-45deg)
+    animation: move-light
+    animation-iteration-count: infinite
+    
+    animation-duration: 5s 
+    animation-delay: 2s
+    
+ 
+@keyframes move-light
+  0%
+  	transform: translateX(-4em) skewX(-45deg)
+  20%
+  	transform: translateX(10em) skewX(-45deg)
+  100%
+  	transform: translateX(10em) skewX(-45deg) 
+
+
+.button.like-button 
+	&:before 
+		animation: move-light2
+		animation-iteration-count: infinite
+		animation-duration: 5s
+		animation-delay: 2s
+		transform: translateX(-4em) skewX(-45deg)
+@keyframes move-light2
+  0%
+  	transform: translateX(-4em) skewX(-45deg)
+  50%
+  	transform: translateX(-4em) skewX(-45deg)
+  70%
+  	transform: translateX(10em) skewX(-45deg) 
+  100%
+  	transform: translateX(10em) skewX(-45deg) 
+
+.button-animation 
+ 	span 
+ 		display: block
+ 		animation: scale-anim
+ 		animation-iteration-count: infinite
+
+ 		animation-duration: 5s
+ 		animation-delay: 3s
+ 		
+ 		transform: scale(1)
+
+.button-animation.like-button
+	span
+		animation: scale-anim2
+		animation-iteration-count: infinite
+		animation-duration: 5s
+		animation-delay: 3s		
+		transform: scale(1)
+@keyframes scale-anim
+  0%
+    transform: scale(1)
+  5%
+   	transform: scale(1.2)
+  10%
+  	transform: scale(1)
+  15% 
+    transform: scale(1.2)
+  20%
+  	transform: scale(1)
+  100% 
+   	transform: scale(1)
+@keyframes scale-anim2
+  0%
+    transform: scale(1)
+  50%
+   	transform: scale(1)
+  55%
+  	transform: scale(1.2)
+  60%
+  	transform: scale(1)
+  65%
+  	transform: scale(1.2)
+  70%
+  	transform: scale(1)
+  100% 
+  	transform: scale(1)
+
+
 @media only screen and (max-width : 992px)
 	/**/
 	.flirtu-action 
 		width: 100%
+@media only screen and (max-width : 768px)
+	/**/
+	.footer a
+		font-size: 3.5vw
+		margin-bottom: 0
+	.copy 
+		font-size: 3.5vw
 
 
 @import "media"
