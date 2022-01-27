@@ -284,6 +284,8 @@ body
 		font-weight: 700
 .bold 
 	font-weight: 700
+	text-align: center
+	font-size: 3vh
 
 //start footer style
 .footer 
@@ -307,7 +309,8 @@ body
 	display: flex 
 	justify-content: center
 	flex-wrap: wrap
-
+.list 
+	line-height: 1.8
 
 //end footer style
 
@@ -321,9 +324,9 @@ body
     position: absolute
     top: 0
     left: 0
-    width: 1.5vh
+    width: 5vh
     height: 100%
-    background-color: rgba(#fff, 0.6)
+    background-color: rgba(#fff, 1)
     transform: translateX(-4em) skewX(-45deg)
     animation: move-light
     animation-iteration-count: infinite
@@ -367,7 +370,7 @@ body
  		animation-duration: 5s
  		animation-delay: 3s
  		
- 		transform: scale(1)
+ 		transform: scale(1) rotate(0)
 
 .button-animation.like-button
 	span
@@ -378,32 +381,32 @@ body
 		transform: scale(1)
 @keyframes scale-anim
   0%
-    transform: scale(1)
+    transform: scale(1) rotate(0)
   5%
-   	transform: scale(1.2)
+   	transform: scale(1.6) rotate(25deg)
   10%
-  	transform: scale(1)
+  	transform: scale(1) rotate(0)
   15% 
-    transform: scale(1.2)
+    transform: scale(1.6) rotate(-25deg)
   20%
-  	transform: scale(1)
+  	transform: scale(1) rotate(0)
   100% 
-   	transform: scale(1)
+   	transform: scale(1) rotate(0)
 @keyframes scale-anim2
   0%
-    transform: scale(1)
+    transform: scale(1) rotate(0)
   50%
-   	transform: scale(1)
+   	transform: scale(1) rotate(0)
   55%
-  	transform: scale(1.2)
+  	transform: scale(1.6) rotate(25deg)
   60%
-  	transform: scale(1)
+  	transform: scale(1) rotate(0)
   65%
-  	transform: scale(1.2)
+  	transform: scale(1.6) rotate(-25deg)
   70%
-  	transform: scale(1)
+  	transform: scale(1) rotate(0)
   100% 
-  	transform: scale(1)
+  	transform: scale(1) rotate(0)
 
 
 @media only screen and (max-width : 992px)
