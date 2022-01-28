@@ -129,7 +129,7 @@ body
 .user-name,
 .activity,
 .got-it
-	font-size: 2vh
+	font-size: 1.8vh
 	padding: 0vh 1vh
 	padding-bottom: 0.5vh
 .activity,
@@ -225,6 +225,11 @@ body
 		width: 3vh
 	.add-img
 		width: 6vh
+		height: 6vh
+		background: url('../img/img.svg')
+		background-size: 100%
+		background-position: center
+		background-repeat: no-repeat
 	input 
 		outline: none
 		border: none
@@ -234,6 +239,21 @@ body
 		text-align: left
 		display: block
 		margin-left: 1vh
+
+.add-doc 
+	width: 3vh
+	height: 6vh
+	background: url('../img/98520.svg')
+	background-size: 100%
+	background-position: center
+	background-repeat: no-repeat
+.smile
+	width: 3vh
+	height: 3vh
+	background: url('../img/smiley-svgrepo-com.svg')
+	background-size: 100%
+	background-position: center
+	background-repeat: no-repeat
 .flirtu-simulation-container.blure 
 	filter: blur(4px)
 
@@ -441,22 +461,22 @@ body
 
 .finger
 	position: absolute
-	top: 60vh
+	top: 58vh
 	right: 40vw
 	font-size: 15vh
 	z-index: 999
-	transform: rotate(30deg)
+	transform: rotate(-60deg)
 	animation: jump
 	animation-iteration-count: infinite
 	animation-duration: 1s
 
 @keyframes jump 
 	0% 
-		transform: rotate(30deg) translateY(-20%)
+		transform: rotate(-60deg) translateX(-20%)
 	50%
-		transform: rotate(30deg) translateY(0%)
+		transform: rotate(-60deg) translateX(0%)
 	100%
-		transform: rotate(30deg) translateY(-20%)
+		transform: rotate(-60deg) translateX(-20%)
 @media only screen and (max-width : 992px)
 	/**/
 	.flirtu-action 
